@@ -1,4 +1,4 @@
-<ion-view view-title="Dirección">
+<ion-view view-title="Tu Cocina Virtual">
   <ion-content class="content">
 	<div class="row columna">
 		<div class="col col-100 barra-info">
@@ -8,7 +8,7 @@
 
 	<div class="row">
 		<div class="col col-100 direccion">
-			<label for="">Escriba su dirección</label>
+			<label for="">Escribir dirección</label>
 			<div class="list">
 			    <label class="item item-input item-select">
 			    <div class="input-label">
@@ -36,7 +36,34 @@
 	</div>
 
 	<div class="row">
-		
+		<div class="dir">
+		<p>DIRECCIÓN</p>
+
+			<div class="select-dir">
+				<select class="item item-input item-select">
+					<option selected>Calle</option>
+					<option>Avenida</option>
+				</select>
+			</div>
+			<div class="calle">
+				<input type="text" size="3">
+			</div>
+			<div class="numeral">
+				<span>#</span>
+			</div>
+			<div class="num1">
+				<input type="text" size="3">
+			</div>
+			<div class="guion">
+				<span>-</span>
+			</div>
+			<div class="num2">
+				<input type="text" size="3">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<button ng-click="restaurantes()" class="button button-block button-balanced">Buscar Sitios de Comida</button>
 	</div>
    </ion-content>
 </ion-view>

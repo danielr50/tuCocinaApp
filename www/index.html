@@ -8,6 +8,8 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+   <link href="http://fonts.googleapis.com/css?family=Quattrocento%20Sans" rel="stylesheet" type="text/css">
+
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -15,8 +17,12 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    
+    <script src="lib/angular-local-storage.min.js"></script>
 
     <!-- your app's js -->
        <!-- your app's js -->
@@ -26,8 +32,8 @@
   </head>
   <body ng-app="tuCocina">
  
-    <ion-nav-bar class="bar-stable bar-dark">
-      <ion-nav-back-button>
+    <ion-nav-bar class="bar-stable header-app">
+      <ion-nav-back-button class="title-header">
       </ion-nav-back-button>
     </ion-nav-bar>
 
